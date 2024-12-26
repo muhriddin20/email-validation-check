@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", serif;
+  background-color: #243642;
+}
+
+.wrapper h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.form {
+  position: relative;
+}
+
+.form input {
+  width: 400px;
+  font-size: 18px;
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.form span {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.form.valid {
+  color: #118b50;
+}
+
+.form.invalid {
+  color: #fb4141;
+}
+
+.form.valid span::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: url("icons/check-line.svg") no-repeat;
+}
+
+.form.invalid span::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: url("icons/close-line.svg") no-repeat;
+}
